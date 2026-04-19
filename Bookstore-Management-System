@@ -1,0 +1,18 @@
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+
+    def get_details(self):
+        return f"{self.title} by {self.author} - ${self.price}"
+
+# Managing Inventory
+my_inventory = [
+    Book("AI Revolution", "IBM Expert", 25),
+    Book("Swift UI Design", "Apple Academy", 40)
+]
+
+print("--- Current Bookstore Inventory ---")
+for book in my_inventory:
+    print(book.get_details())
